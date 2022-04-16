@@ -406,14 +406,8 @@ def O3_color(x):
 
 
 #################################################
-df = load_table(
-    r"C:\Users\Siddhant\PycharmProjects\Projects\aqi_streamlit\2020-2022_history_data_processed.parquet.brotli"
-)
+df = load_table("2020-2022_history_data_processed.parquet.brotli")
 df["Date"] = pd.to_datetime(df["Date"]).dt.date
-
-# html_str = f"""<h2>INDIA's AQI</h2> <p style="font-size:20px">AQI Analysis and Forecasting</p>
-#             """
-# st.markdown(html_str, unsafe_allow_html=True)
 
 page_header = f"""
                 <div style="width: 100%;height: 100px;background-repeat: no-repeat;background-position: center center;
@@ -742,9 +736,7 @@ station_page = f"""
 
 </html>
 """
-with open(
-    r"C:\Users\Siddhant\PycharmProjects\Projects\aqi_streamlit\station_css.html", "r"
-) as f:
+with open("htmls/station_css.html", "r") as f:
     station_css = f.read()
 
 
@@ -826,7 +818,7 @@ with col2:
         columns=["month", "year", "day_of_week", "day_of_year"], inplace=True
     )
     l = load_model(
-        "C:/Users/Siddhant/PycharmProjects/Projects/aqi_streamlit/trained_station_models/"
+        "trained_station_models/"
         + str(select_station),
         verbose=False,
     )
@@ -1063,9 +1055,7 @@ top_city_page = f"""
 
 </html>"""
 
-with open(
-    r"C:\Users\Siddhant\PycharmProjects\Projects\aqi_streamlit\city_css.html", "r"
-) as f:
+with open("htmls/city_css.html", "r") as f:
     city_css = f.read()
 top_city_page = top_city_page.replace("<style></style>", city_css)
 
@@ -1207,9 +1197,7 @@ map_df["r"] = map_df["AQI_bucket"].apply(lambda x: get_rgb(x)[0])
 map_df["g"] = map_df["AQI_bucket"].apply(lambda x: get_rgb(x)[1])
 map_df["b"] = map_df["AQI_bucket"].apply(lambda x: get_rgb(x)[2])
 
-with open(
-    r"C:\Users\Siddhant\PycharmProjects\Projects\aqi_streamlit\card.html", "r"
-) as f:
+with open("htmls/card.html", "r") as f:
     card_html = f.read()
 
 map_header = f"""
