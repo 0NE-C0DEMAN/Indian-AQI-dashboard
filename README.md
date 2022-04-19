@@ -10,7 +10,7 @@
 ![Streamlit](https://img.shields.io/static/v1?style=for-the-badge&message=Streamlit&color=FF4B4B&logo=Streamlit&logoColor=FFFFFF&label=)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/siddhant-mishra-02aa50110_data-project-cloud-ugcPost-6921765182843092994-krmR?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
-# AQI(Air Quality Index) Analysis ,Visualization and Forecasting.
+# AQI (Air Quality Index) Analysis ,Visualization and Forecasting.
 
 A web App deployed on HEROKU CLOUD/Strealit CLoud ,that Analyse & visualize the Air Quality Data collected on hourly basis from 153 stations in india and than Forecast the AQI(Air Quality Index) for next 7 days, for every individual station.
 
