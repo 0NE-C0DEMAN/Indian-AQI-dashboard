@@ -37,7 +37,7 @@ intervals, ideally eight parameters (PM 10, PM 2.5, NO2, SO2, CO, O3, NH3, and P
 short-term standards are prescribed should, be measured on a continuous basis.
 
 ## Project overview
-In this project we have collected data from various sources like kaggle and API such as WAQI and OPENWEATHERMAP, performed EDA on the data and stored it on GitHub, then apply Forecasting model.
+In this project we have collected data from various sources like kaggle and API such as WAQI and OPENWEATHERMAP, performed EDA on the data and stored it on GitHub, then applied Forecasting model.
 
 ## API Used
 
